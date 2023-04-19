@@ -193,7 +193,7 @@ span {
   display: grid;
   grid-template-columns: repeat (3, 1fr);
   align-items: center;
-  gap: 2, 5rem;
+  gap: 2.5rem;
 }
 .portfolio-container .portfolio-box {
   position: relative;
@@ -203,7 +203,7 @@ span {
   display: flex;
 }
 .portfolio-box img {
-  width: 100%;
+  width: 100px;
 }
 .portfolio-box .portfolio-layer {
   position: absolute;
@@ -212,4 +212,14 @@ span {
   width: 100%;
   height: 100%;
   background: linear-gradient(rgba(0, 0, 0, 0.1), var(--main-color));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 0 4rem;
+  transform: translateY(100%);
+}
+.portfolio-layer h4 {
+  font-size: 3rem;
 }
